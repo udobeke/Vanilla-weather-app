@@ -16,46 +16,42 @@
 
 <body>
   <div class="container">
-    <div class="weather-app">
-      <form>
-        <div class="row">
-          <div class="col-9">
-            <input type="search" placeholder="Enter a city.." class="form-control search-input">
-            <div class="col-3 p-0 ">
-              <input type="submit" class="btn btn-primary   search-btn" value="Search">
+    <div class="weather-app-wrapper">
+      <div class="weather-app">
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class="col-9">
+              <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
+                autocomplete="off" />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="btn btn-primary w-100" />
             </div>
           </div>
-        </div>
-      </form>
-      <h1>
-        Abuja
-      </h1>
-      <ul>
-        <li>
-          Light rain
-        </li>
-        <li>
-          9°C
-        </li>
-
-        <img src="images/sun.png" alt="sun" class="mx-auto d-block">
-
-        <p>
-          Pressure: 1007 <span>|</span> Humidity: 91°C
-        </p>
-
-
-
+        </form>
+        <h1>
+          Abuja
+        </h1>
+        <ul>
+          <li>
+            Light rain
+          </li>
+          <li>
+            <strong>9</strong>°C
+          </li>
+          <img src="images/sun.png" alt="sun" class="mx-auto d-block">
+          <p>
+            Pressure: 1007 <span>|</span> Humidity: <strong>91</strong>°C
+          </p>
+      </div>
     </div>
   </div>
-
-  </div>
-
-  </div>
-  <script src="src/app.js"></script>
   <small>
     <a href="https://github.com/udobeke" target="_blank">Open-source code</a> by Peace Chinagwam
   </small>
+  </div>
+  </div>
+  <script src="src/app.js"></script>
 </body>
 
 </html>

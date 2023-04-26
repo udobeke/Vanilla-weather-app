@@ -15,11 +15,12 @@ h1 {
   color: whitesmoke;
   font-size: 38px;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: meduim;
   line-height: 28px;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
+
 }
 
 ul {
@@ -36,9 +37,12 @@ h6 {
   padding-left: 5px;
 }
 
+h6 {
+  line-height: 60px;
+}
+
 img {
-  width: 80px;
-  padding-right: 30px;
+  width: 60px;
 }
 
 .search-btn {
@@ -54,4 +58,34 @@ img {
   margin: 40px 0;
   padding-bottom: 50px;
   text-align: center;
+}
+
+.units {
+  position: relative;
+  font-size: 15px;
+  top: -13px;
+  
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.d-flex.justify-content-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+strong {
+  font-size: xx-large;
+  color: whitesmoke;
+  font-weight: 400;
+}
+
+.flex{
+padding-right: 30px;
 }

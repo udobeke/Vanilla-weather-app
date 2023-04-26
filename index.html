@@ -9,7 +9,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
     integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="src/styles.css">
   <title>Vanilla </title>
 </head>
@@ -29,29 +29,31 @@
             </div>
           </div>
         </form>
-        <h1>
-          Abuja
-        </h1>
+        <h1 id="city"></h1>
         <ul>
           <li>
-            Wednesday
+            Tuesday 08:00
           </li>
-          <li>
-            Light rain
-          </li>
-          <div class="row">
-            <div class="col-12 col-lg-6 col-md-6 col-sm-10">
-              <div class="d-flex  justify-content-end">
-                <img src="images/sun.png" alt="sun" class="mx-auto d-block">
+          <li id="description"></li>
+
+        </ul>
+        <div class="row weather-temperature">
+          <div class="col-6">
+            <div class="d-flex  justify-content-end">
+              <img src="images/sun.png" alt="sun" class="mx-auto d-block" />
+              <div class="flex">
+                <strong id="temperature">12</strong><span class="units"> °C | <a href "#">°F</a></span>
               </div>
 
-
-
             </div>
-            <h6>
-              Humidity: 107 % <span>|</span> Wind: <strong>1 km/h</strong>
-            </h6>
+
+
+
           </div>
+          <h6>
+            Humidity: 107 % <span>|</span> Wind: 1 km/h
+          </h6>
+        </div>
       </div>
       <small>
         <a href="https://github.com/udobeke" target="_blank">Open-source code</a> by Peace Chinagwam

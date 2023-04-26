@@ -10,14 +10,13 @@
   border-radius: 10px;
 }
 
-strong {
-  color: #885df1;
-}
+
 
 h1 {
-  color: #885df1;
+  color: #878787;
+  font-size: 38px;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 28px;
   text-align: center;
   margin-top: 50px;
@@ -30,18 +29,14 @@ ul {
 }
 
 li,
-p {
+h6 {
   list-style: none;
-  color: rgb(135, 135, 135);
-  font-size: 20px;
-  font-weight: 100;
+  color: black;
+
+  font-weight: lighter;
   text-align: center;
   padding-right: 30px;
 
-}
-
-p {
-  color: blue;
 }
 
 img {
@@ -56,4 +51,22 @@ img {
   font-weight: 700;
   height: 40px;
   padding: 0px 10px;
+}
+
+.WeatherForecast {
+  border-bottom: 1px solid #f9f7fe;
+  margin: 40px 0;
+  padding-bottom: 50px;
+  text-align: center;
+  
+}
+.WeatherForecast .forecast-time {
+  color: rgba(39, 33, 66, .4);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.col {
+  flex: 1 0;
 }

@@ -28,6 +28,10 @@ ul {
   padding: 0;
 }
 
+li {
+  text-transform: capitalize;
+}
+
 li,
 h6 {
   list-style: none;
@@ -64,7 +68,7 @@ img {
   position: relative;
   font-size: 15px;
   top: -13px;
-  
+
 }
 
 .row {
@@ -86,6 +90,6 @@ strong {
   font-weight: 400;
 }
 
-.flex{
-padding-right: 30px;
+.flex {
+  padding-right: 30px;
 }

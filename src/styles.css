@@ -93,3 +93,13 @@ strong {
 .flex {
   padding-right: 30px;
 }
+
+.weather-temperature .active {
+  color: whitesmoke;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature.active:hover {
+  text-decoration: none;
+}

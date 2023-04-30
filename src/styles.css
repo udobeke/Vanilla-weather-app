@@ -1,7 +1,6 @@
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 10px auto;
-  
+  margin: 40px auto;
 }
 
 
@@ -9,8 +8,7 @@
   padding: 20px;
   border: 1px solid #9fd3c7;
   border-radius: 10px;
-  background: hwb(174 44% 36%);
-  
+  background: #70a39e;
 }
 
 h1 {
@@ -22,7 +20,6 @@ h1 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
-
 }
 
 ul {
@@ -70,7 +67,6 @@ img {
   position: relative;
   font-size: 15px;
   top: -13px;
-
 }
 
 .row {
@@ -105,3 +101,23 @@ strong {
 .weather-temperature.active:hover {
   text-decoration: none;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+

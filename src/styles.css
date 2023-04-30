@@ -1,6 +1,7 @@
 .weather-app-wrapper {
   max-width: 600px;
   margin: 10px auto;
+  
 }
 
 
@@ -8,7 +9,8 @@
   padding: 20px;
   border: 1px solid #9fd3c7;
   border-radius: 10px;
-  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background: hwb(174 44% 36%);
+  
 }
 
 h1 {

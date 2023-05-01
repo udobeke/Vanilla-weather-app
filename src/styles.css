@@ -101,7 +101,6 @@ img {
 strong {
   font-size: xx-large;
   color: whitesmoke;
-  font-weight: 400;
 }
 
 .flex {
@@ -137,3 +136,6 @@ strong {
   font-size: 13px;
 }
 
+hr {
+  color: whitesmoke;
+}

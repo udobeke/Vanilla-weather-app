@@ -20,7 +20,6 @@ function formatDate(timestamp) {
   return `${day} ${hours} : ${minutes}`;
 }
 
-
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -68,10 +67,11 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "0c4358b449bfbe877c6b8dc889c84c8e";
+  let apiKey = "3dce9b1c66837262a25b3f448d354a76";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
+
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");

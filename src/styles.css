@@ -31,6 +31,10 @@ li {
   text-transform: capitalize;
 }
 
+li::first-letter {
+  text-transform: capitalize;
+}
+
 li,
 h6 {
   list-style: none;
@@ -42,6 +46,10 @@ h6 {
 
 h6 {
   line-height: 60px;
+}
+
+footer {
+  text-align: center;
 }
 
 img {
@@ -73,7 +81,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 30px;
+  
 }
 
 .d-flex.justify-content-end {
@@ -120,4 +128,3 @@ strong {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
-

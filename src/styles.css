@@ -1,15 +1,15 @@
 .weather-app-wrapper {
-  max-width: 600px;
-  margin: 100px auto;
+  max-width: 700px;
+  margin: 10px auto;
   padding: 10px;
 }
 
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #9fd3c7;
   border-radius: 10px;
-  background: #0B59A5;
+  background: linear-gradient(58deg, rgb(11, 44, 166) 9%, rgb(103, 213, 239) 78%);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -44,6 +44,7 @@ h6 {
   color: whitesmoke;
   font-weight: lighter;
   text-align: center;
+  font-size: medium;
 }
 
 h6 {
@@ -70,6 +71,10 @@ img {
   font-weight: 700;
   height: 40px;
   padding: 0px 10px;
+}
+
+.mb-3 {
+  padding-top: 25px;
 }
 
 .WeatherForecast {

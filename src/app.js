@@ -20,13 +20,6 @@ function formatDate(timestamp) {
   return `${day} ${hours} : ${minutes}`;
 }
 
-function formatDay(timestamp) {
-  let date = new Date(timestamp * 1000);
-  let day = date.getDay();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-  return days[day];
-}
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -88,6 +81,9 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+
+celsiusTemperature = response.data.main.temp;
+
   temperatureElement.innerHTML = Math.round
     (response.data.main.temp);
   cityElement.innerHTML = response.data.name;
@@ -97,6 +93,7 @@ function displayTemperature(response) {
     (response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  
 
   getForecast(response.data.coord);
 }
@@ -116,7 +113,6 @@ function handleSubmit(event) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
@@ -143,4 +139,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Abuja");
-displayForecast();

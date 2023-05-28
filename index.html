@@ -18,49 +18,57 @@
   <div class="container">
     <div class="weather-app-wrapper">
       <div class="weather-app">
-        <form id="search-form" class="mb-3">
-          <div class="row">
-            <div class="col-9">
-              <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
-                autocomplete="off" />
+      
+            <div class="app-title">
+              <input type="checkbox" name="change-theme" id="change-theme" />
+              <label for="change-theme" class="icons">
+                <img src="figures/sun-icon.svg" alt="" width="30" height="30" class="icon-sun" />
+                <img src="figures/moon-icon.svg" alt="" width="30" height="30" class="icon-moon" />
+              </label>
             </div>
-            <div class="col-3">
-              <input type="submit" value="Search" class="btn btn-primary w-100" />
-            </div>
-          </div>
-        </form>
-        <h1 id="city"></h1>
-        <ul>
-          <li id="date"></li>
-          <li id="description"></li>
-
-        </ul>
-        <div class="row weather-temperature">
-          <div class="col-6">
-            <div class="d-flex  justify-content-end">
-              <img src="#" alt="sun" class="mx-auto d-block" id="icon" style=" width: 100px;">
-              <div class="flex">
-                <strong id="temperature"></strong><span class="units"> °C </span>
+            <form id="search-form" class="mb-3">
+              <div class="row">
+                <div class="col-9">
+                  <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
+                    autocomplete="off" />
+                </div>
+                <div class="col-3">
+                  <input type="submit" value="Search" class="btn btn-primary w-100" />
+                </div>
               </div>
+            </form>
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li id="description"></li>
+
+            </ul>
+            <div class="row weather-temperature">
+              <div class="col-6">
+                <div class="d-flex  justify-content-end">
+                  <img src="#" alt="sun" class="mx-auto d-block" id="icon" style=" width: 100px;">
+                  <div class="flex">
+                    <strong id="temperature"></strong><span class="units"> °C </span>
+                  </div>
+                </div>
+              </div>
+              <h6>
+                Humidity: <span id="humidity"></span>%<span> &nbsp;| &nbsp; Wind: <span id="wind"></span>km/h
+              </h6>
             </div>
+
+            <hr>
+
+            <div class="weather-forecast" id="forecast"></div>
+
           </div>
-          <h6>
-            Humidity: <span id="humidity"></span>%<span> &nbsp;| &nbsp; Wind: <span id="wind"></span>km/h
-          </h6>
-        </div>
-
-        <hr>
-
-        <div class="weather-forecast" id="forecast"></div>
-
-      </div>
-      <footer class="text-centre mt-2">
-        <small>
-          <a href="https://github.com/udobeke/Vanilla-weather-app" target="_blank">Open-source code</a> by Peace
-          Chinagwam
-        </small>
-      </footer>
-      <script src="src/app.js"></script>
+          <footer class="text-centre mt-2">
+            <small>
+              <a href="https://github.com/udobeke/Vanilla-weather-app" target="_blank">Open-source code</a> by Peace
+              Chinagwam
+            </small>
+          </footer>
+          <script src="src/app.js"></script>
 </body>
 
 </html>
